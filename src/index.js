@@ -1,23 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from './routes/App';
 import reportWebVitals from './reportWebVitals';
-import About from './routes/about';
 import Career from './routes/career';
 import Education from './routes/education';
 import Projects from './routes/projects';
+import Volunteer from './routes/volunteer';
+import TechStack from './routes/tech-stack';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />} />
-      <Route path="/about" element={<About />} />
       <Route path="/career" element={<Career />} />
       <Route path="/education" element={<Education />} />
       <Route path="/projects" element={<Projects />} />
+      <Route path="/volunteer" element={<Volunteer />} />
+      <Route path="/tech-stack" element={<TechStack />} />
     </Routes>
   </BrowserRouter>
 );

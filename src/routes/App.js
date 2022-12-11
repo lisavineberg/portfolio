@@ -1,14 +1,17 @@
-import Nav from '../components/Nav';
+import Layout from '../components/Layout';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Nav />
-        <span><i>veerrrryyy WIP</i> but by all means explore the navigation items!</span>
-      </header>
-      <main></main>
-    </div>
+    <Layout>
+      <h1>Lisa Vineberg</h1>
+      <p>
+        Hi, I'm Lisa Vineberg, a front end web developer based out of Montreal, Canada. As you can see, this website is very much a work in progress -
+        coming up with a design is not my strong suit, so for now, let's stick to the basics.
+        I'm always looking to learn more. I'm fluent in English and French, have an intermediate (albeit rusty) level of Hebrew, and a child's level of Polish
+        (learning a new language at 30 is tough, but a girl can try!). I volunteer making social calls to isolated seniors, and also as a high school math tutor.
+        I love to read, knit, bake, and spend time outside.
+      </p>
+    </Layout>
   );
 }
 
