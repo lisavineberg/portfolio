@@ -4,6 +4,12 @@ import List from "../components/List";
 
 const items = [
   {
+    title: "Mavi Jeans",
+    subtitle: "Half Helix - HTML web components, Liquid",
+    text: "Using Shopify’s platform, developed a new, easy-to-navigate website that scores high on accessibility and performance.",
+    link: "https://mavi.com/"
+  },
+  {
     title: "Package Free",
     subtitle: "Half Helix - Gatsby, Nacelle, Vercel, Contentful CMS, styled components",
     text: "Built a headless site that interfaces with both Shopify for accounts and product data, and Contentful for page content.",
