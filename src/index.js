@@ -1,4 +1,3 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -9,6 +8,7 @@ import Education from './routes/education';
 import Projects from './routes/projects';
 import Volunteer from './routes/volunteer';
 import TechStack from './routes/tech-stack';
+import Blog from './routes/blog';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -20,6 +20,7 @@ root.render(
       <Route path="/projects" element={<Projects />} />
       <Route path="/volunteer" element={<Volunteer />} />
       <Route path="/tech-stack" element={<TechStack />} />
+      <Route path="/blog" element={<Blog />} />
     </Routes>
   </BrowserRouter>
 );
