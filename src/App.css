@@ -150,3 +150,9 @@ code {
   }
 }
 /* end carousel */
+
+/* popover */
+#popover-test::backdrop {
+  background: rgba(190, 190, 190, 0.8);
+}
+/* end popover */

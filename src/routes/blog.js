@@ -1,6 +1,6 @@
 import Layout from "../components/Layout";
 import Card from "../components/Card";
-import data from '../content/blog-posts.json';
+import data from '../blog-content/blog-posts.json';
 
 const Blog = () => {
   return (
