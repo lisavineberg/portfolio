@@ -1,3 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+code {
+  background: lightgray;
+}
+
 .nav-list {
   display: flex;
   gap: 12px;
@@ -6,3 +14,139 @@
   overflow-x: scroll;
   padding: 0;
 }
+
+.list-unstyled {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Carousel */
+.carousel  {
+  height: 100vh;
+  overflow-y: hidden;
+  position: relative;
+}
+
+.carousel__scrollcontainer {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-timeline: --carousel__scrollcontainer inline;
+}
+
+.carousel__progress {
+  position: absolute;
+  left: 0;
+  height: 1em;
+  transform-origin: 0 50%;
+  z-index: 1;
+}
+
+.carousel__progress--step {
+  animation: auto grow-progress--step linear forwards;
+  animation-timeline: --carousel__scrollcontainer;
+  background: pink;
+  top: 0;
+  width: calc(100% / var(--num-images, 3));
+  translate: 0 0;
+}
+
+.carousel__progress--full {
+  animation: auto grow-progress--full linear forwards;
+  animation-timeline: --carousel__scrollcontainer;
+  background: lightskyblue;
+  top: 1em;
+  width: 100%;
+  transform: scaleX(calc(1 / var(--num-images, 3)));
+}
+
+.slide {
+  animation: linear animate-in-and-out both;
+  animation-duration: auto;
+  animation-timeline: view(inline);
+  background: lightgoldenrodyellow;
+  flex: 0 0 100%;
+  height: fit-content;
+  min-height: 100vh;
+  overflow-y: hidden;
+  scroll-snap-align: center;
+}
+
+.slide--scrollable {
+  overflow-y: initial;
+}
+
+.slide__inner {
+  animation: linear slide-animation;
+  animation-duration: auto;
+  animation-timeline: scroll(nearest block);
+  height: 200vh;
+}
+
+.slide__title {
+  animation: linear title-animation;
+  animation-duration: auto;
+  animation-timeline: scroll(nearest block);
+  font-size: 128px;
+  margin: 0;
+  padding-top: 100px;
+  text-wrap: balance;
+}
+
+@keyframes title-animation {
+  to {
+    font-size: 24px;
+  }
+}
+
+@keyframes slide-animation {
+  0% {
+    background-color: lightyellow;
+  }
+
+  50% {
+    background-color: palegreen;
+  }
+
+  100% {
+    background-color: palevioletred;
+  }
+}
+
+
+@keyframes grow-progress--full {
+  to { transform: scaleX(1); }
+}
+
+@keyframes grow-progress--step {
+  50% {
+    translate: 33vw;
+  }
+  100% {
+    translate: calc(100vw * 2 / 3);
+  }
+}
+
+@keyframes animate-in-and-out {
+  entry 0% {
+    opacity: 0;
+    clip-path: inset(50% 0% 50% 0%);
+  }
+  entry 90% {
+    opacity: 1;
+    clip-path: inset(0% 0% 0% 0%);
+  }
+
+  exit 10% {
+    opacity: 1;
+    clip-path: inset(0% 0% 0% 0%);
+  }
+  exit 100% {
+    opacity: 0;
+    clip-path: inset(50% 0% 50% 0%);
+  }
+}
+/* end carousel */
