@@ -28,6 +28,9 @@ const additionalFrontEnd = [
   },
   {
     subtitle: "SCSS"
+  },
+  {
+    subtitle: "Lit"
   }
 ]
 

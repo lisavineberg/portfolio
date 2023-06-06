@@ -18,9 +18,9 @@ const webDevItems = [
     text: "Promoted from junior to intermediate developer. Created and implemented complex Javascript solutions based on client requests."
   },
   {
-    title: "Dr. Miriam Kirmayer",
-    subtitle: "Freelance, Jan 2022 - Sep 2022",
-    text: "Maintaining and updating a legacy Wordpress site. Finding ways to add new modules within the existing infrastructure."
+    title: "Freelance",
+    subtitle: "Jan 2022 - present",
+    text: "Maintaining and updating a legacy Wordpress sites. Finding ways to add new modules within the existing infrastructure. Adding small modules to Shopify sites."
   }
 ];
 const nonWebDevItems = [
