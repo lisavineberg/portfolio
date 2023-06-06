@@ -1,0 +1,32 @@
+{
+  "frontEnd": [
+    "HTML",
+    "CSS",
+    "Javascript"
+  ],
+  "additionalFrontEnd": [
+    "React",
+    "Gatsby",
+    "Vue",
+    "Styled components",
+    "Web components",
+    "Lit",
+    "SCSS/SASS"
+  ],
+  "backEnd": [
+    "graphql",
+    "Apollo",
+    "Fauna DB",
+    "Firebase",
+    "CORS",
+    "RESTful APIs"
+  ],
+  "skills": [
+    "accessibility/ADA standards",
+    "cross browser testing",
+    "responsive design",
+    "serverless functions",
+    "CMS & third party integrations",
+    "headless websites"
+  ]
+}

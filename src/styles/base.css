@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+code {
+  background: lightgray;
+}
+
+.nav-list {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin: 0;
+  overflow-x: scroll;
+  padding: 0;
+}
+
+.list-unstyled {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  border: 1px solid lightskyblue;
+  border-radius: 10px;
+  box-shadow: 6px 6px 2px 1px rgba(135, 206, 250, .2);;
+  padding: 20px;
+  transition: translate 300ms linear;
+}
+
+.card:hover {
+  translate: 0 -6px;
+  transition: translate 300ms linear;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}

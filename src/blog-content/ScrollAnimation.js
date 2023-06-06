@@ -1,3 +1,5 @@
+import '../styles/scroll-animation.css'
+
 function Carousel() {
 
   return (

@@ -1,3 +1,5 @@
+import '../styles/popover.css'
+
 function PopoverApi() {
   return (
     <div>

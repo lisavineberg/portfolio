@@ -1,5 +1,5 @@
 import ReactDOM from 'react-dom/client';
-import './App.css';
+import './styles/base.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from './routes/App';
 import reportWebVitals from './reportWebVitals';

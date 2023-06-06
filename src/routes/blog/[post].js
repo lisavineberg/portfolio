@@ -2,7 +2,7 @@ import React, { lazy, Suspense } from "react";
 import { useParams } from "react-router";
 import Layout from "../../components/Layout";
 
-import data from '../../blog-content/blog-posts.json';
+import data from '../../content/blog-posts.json';
 
 const ScrollAnimation = lazy(() => import("../../blog-content/ScrollAnimation"));
 const PopoverApi = lazy(() => import("../../blog-content/PopoverApi"))

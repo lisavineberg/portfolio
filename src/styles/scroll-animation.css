@@ -1,27 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
-code {
-  background: lightgray;
-}
-
-.nav-list {
-  display: flex;
-  gap: 12px;
-  justify-content: center;
-  margin: 0;
-  overflow-x: scroll;
-  padding: 0;
-}
-
-.list-unstyled {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-/* Carousel */
 .carousel  {
   height: 100vh;
   overflow-y: hidden;
@@ -149,10 +125,3 @@ code {
     clip-path: inset(50% 0% 50% 0%);
   }
 }
-/* end carousel */
-
-/* popover */
-#popover-test::backdrop {
-  background: rgba(190, 190, 190, 0.8);
-}
-/* end popover */

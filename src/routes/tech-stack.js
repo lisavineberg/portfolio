@@ -1,96 +1,30 @@
 import Layout from "../components/Layout";
-import List from "../components/List";
+import content from "../content/tech-stack.json";
 
-const frontEnd = [
-  {
-    subtitle: "HTML"
-  },
-  {
-    subtitle: "CSS"
-  },
-  {
-    subtitle: "Javascript"
-  }
-]
-
-const additionalFrontEnd = [
-  {
-    subtitle: "React"
-  },
-  {
-    subtitle: "Gatsby"
-  },
-  {
-    subtitle: "Vue"
-  },
-  {
-    subtitle: "Styled components"
-  },
-  {
-    subtitle: "SCSS"
-  },
-  {
-    subtitle: "Lit"
-  }
-]
-
-const backEnd = [
-  {
-    subtitle: "graphql"
-  },
-  {
-    subtitle: "Apollo"
-  },
-  {
-    subtitle: "Fauna DB"
-  },
-  {
-    subtitle: "Firebase"
-  },
-  {
-    subtitle: "CORS"
-  },
-  {
-    subtitle: "RESTful APIs"
-  }
-]
-
-const skills = [
-  {
-    subtitle: "accessibility/ADA standards"
-  },
-  {
-    subtitle: "web components"
-  },
-  {
-    subtitle: "cross browser testing"
-  },
-  {
-    subtitle: "responsive design"
-  },
-  {
-    subtitle: "serverless functions"
-  },
-  {
-    subtitle: "CMS & third party integrations"
-  },
-  {
-    subtitle: "headless websites"
-  }
-]
+const handelize = (item) => {
+  return item.toLowerCase().replace(/ /g,'-')
+}
 
 const TechStack = () => {
   return (
     <Layout>
       <h1>Tech Stack</h1>
       <h2>Front end (basics)</h2>
-      <List list={frontEnd} />
+      <ul>
+        {content.frontEnd.map(el => <li key={handelize(el)}>{el}</li>)}
+      </ul>
       <h2>Additional front end</h2>
-      <List list={additionalFrontEnd} />
+      <ul>
+        {content.additionalFrontEnd.map(el => <li key={handelize(el)}>{el}</li>)}
+      </ul>
       <h2>Back end/connections</h2>
-      <List list={backEnd} />
+      <ul>
+        {content.backEnd.map(el => <li key={handelize(el)}>{el}</li>)}
+      </ul>
       <h2>Other skills, strengths</h2>
-      <List list={skills} />
+      <ul>
+        {content.skills.map(el => <li key={handelize(el)}>{el}</li>)}
+      </ul>
     </Layout>
   )
 }
