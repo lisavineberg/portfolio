@@ -9,6 +9,7 @@ import Projects from './routes/projects';
 import Volunteer from './routes/volunteer';
 import TechStack from './routes/tech-stack';
 import Blog from './routes/blog';
+import BlogPost from './routes/blog/[post]';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -21,6 +22,7 @@ root.render(
       <Route path="/volunteer" element={<Volunteer />} />
       <Route path="/tech-stack" element={<TechStack />} />
       <Route path="/blog" element={<Blog />} />
+      <Route path="/blog/:id" element={<BlogPost />} />
     </Routes>
   </BrowserRouter>
 );
