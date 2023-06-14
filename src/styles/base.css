@@ -2,17 +2,93 @@
   box-sizing: border-box;
 }
 
+:root {
+
+  --color-black: #020202;
+  --color-amethyst: #5351a2;
+  --color-amethyst-background: #B5B4D9;
+  --color-plum: #a254a1;
+  --color-plum-background: #D2A7D1;
+  --color-butterscotch: #f6c845;
+  --border-radius: 10px;
+}
+
+body {
+  background-color: var(--color-butterscotch);
+  color: var(--color-black);
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  min-height: 100vh;
+}
+
 code {
   background: lightgray;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--hh-color-black);
+}
+
+#root {
+  display: grid;
+  gap: 2vw;
+}
+
+@media screen and (min-width: 990px) {
+  #root {
+    display: grid;
+    gap: 2vw;
+    grid-template-columns: 15% 1fr;
+  }
+}
+
 .nav-list {
   display: flex;
-  gap: 12px;
-  justify-content: center;
-  margin: 0;
-  overflow-x: scroll;
-  padding: 0;
+  gap: 1em;
+  /* justify-content: center; */
+  margin: 0 auto;
+  max-width: calc(100vw - 20px);
+  overflow: auto;
+  padding: 10px 10px 10px 0;
+  width: max-content;
+}
+
+@media screen and (min-width: 990px) {
+  .nav-list {
+    flex-direction: column;
+  }
+}
+
+.nav-item {
+  align-items: center;
+  background-color: var(--color-plum-background);
+  border: 2px solid var(--color-plum);
+  border-radius: var(--border-radius);
+  box-shadow: 6px 6px 2px 1px rgba(62, 84, 161, .2);
+  display: flex;
+  padding: 1em;
+}
+
+@media screen and (min-width: 990px) {
+  .nav-item {
+    padding: 2em;
+  }
+}
+
+.nav-item--current {
+  border-style: dashed;
+  cursor: auto;
+}
+
+.nav-item.nav-item--current:hover {
+  translate: 0;
+  transition: none;
 }
 
 .list-unstyled {
@@ -22,14 +98,16 @@ code {
 }
 
 .card {
-  border: 1px solid lightskyblue;
-  border-radius: 10px;
-  box-shadow: 6px 6px 2px 1px rgba(135, 206, 250, .2);;
-  padding: 20px;
+  background-color: var(--color-amethyst-background);
+  border: 2px solid var(--color-amethyst);
+  border-radius: var(--border-radius);
+  box-shadow: 6px 6px 2px 1px rgba(83, 81, 162, .2);
+  padding: 2em;
   transition: translate 300ms linear;
 }
 
-.card:hover {
+.card:hover,
+.nav-item:hover {
   translate: 0 -6px;
   transition: translate 300ms linear;
 }
@@ -37,5 +115,10 @@ code {
 .grid {
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(2, 1fr);
+}
+
+@media screen and (min-width: 990px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
