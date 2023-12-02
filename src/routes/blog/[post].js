@@ -6,6 +6,7 @@ import data from '../../content/blog-posts.json';
 
 const ScrollAnimation = lazy(() => import("../../blog-content/ScrollAnimation"));
 const PopoverApi = lazy(() => import("../../blog-content/PopoverApi"))
+const DiscreteAnimations = lazy(() => import("../../blog-content/DiscreteAnimations"))
 
 const Posts = [
   {
@@ -16,6 +17,10 @@ const Posts = [
     title: "popover-api",
     import: PopoverApi
   },
+  {
+    title: "discrete-animations",
+    import: DiscreteAnimations
+  }
 ]
 
 const BlogPost = () => {
