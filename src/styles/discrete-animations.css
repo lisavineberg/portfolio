@@ -1,0 +1,40 @@
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.delete-button {
+  background-color: var(--background-color, '#5351a2');
+  border-radius: var(--border-radius);
+  border: none;
+  cursor: pointer;
+  padding: 2rem;
+  transition: translate 300ms linear;
+}
+
+.delete-button:hover {
+  translate: 0 -6px;
+  transition: translate 300ms linear;
+}
+
+.buttons--transitions .delete-button {
+  transition: opacity 0.5s, display 0.5s, translate 0.3s;
+  transition-behavior: allow-discrete;
+}
+
+.delete-button.remove-animation {
+  animation: fade-out 0.5s forwards;
+}
+
+@keyframes fade-out {
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+.delete-button.remove-transition {
+  opacity: 0;
+  display: none;
+}
