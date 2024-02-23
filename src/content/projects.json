@@ -1,8 +1,14 @@
 [
   {
+    "title": "Assouline",
+    "subtitle": "Half Helix - HTML web components, Lit.js, scroll animations",
+    "text": "Helped lead the development of a new website for the luxury publisher, using web components and Lit.js to create a performant, accessible, and easy-to-maintain site. Emphasis on ensuring that the site scales smoothly, even at very large screens.",
+    "link": "https://www.assouline.com/"
+  },
+  {
     "title": "Mavi Jeans",
     "subtitle": "Half Helix - HTML web components, Liquid",
-    "text": "Using Shopify’s platform, developed a new, easy-to-navigate website that scores high on accessibility and performance.",
+    "text": "Using Shopify's platform, developed a new, easy-to-navigate website that scores high on accessibility and performance.",
     "link": "https://mavi.com/"
   },
   {
@@ -20,7 +26,7 @@
   {
     "title": "Decoding Digital",
     "subtitle": "AppDirect",
-    "text": "Built the entire homepage and episode pages for AppDirect’s new podcast, including a custom audio player and integrations with Craft CMS.",
+    "text": "Built the entire homepage and episode pages for AppDirect's new podcast, including a custom audio player and integrations with Craft CMS.",
     "link": "https://www.appdirect.com/decoding-digital/homepage"
   },
   {
