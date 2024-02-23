@@ -11,7 +11,9 @@
     "Styled components",
     "Web components",
     "Lit",
-    "SCSS/SASS"
+    "SCSS/SASS",
+    "tailwind",
+    "react testing library"
   ],
   "backEnd": [
     "graphql",
@@ -26,7 +28,7 @@
     "cross browser testing",
     "responsive design",
     "serverless functions",
-    "CMS & third party integrations",
+    "CMS & third party integrations (ex. Sanity, Shopify, Contentful)",
     "headless websites"
   ]
 }
